@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/hsr-notices",
+  "title": "Hsr Notices",
+  "description": "HSR Notices MCP — FTC Hart-Scott-Rodino early-termination notices",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/hsr-notices",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-hsr-notices",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/hsr-notices/mcp"
+    }
+  ]
+}
