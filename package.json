@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-hsr-notices",
-  "version": "0.1.2",
-  "description": "HSR Notices MCP — FTC Hart-Scott-Rodino early-termination notices",
+  "version": "0.1.3",
+  "description": "HSR Notices MCP — FTC Hart-Scott-Rodino early-termination notices (api.ftc.gov, brokered by api.data.gov).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-9ece8aed0e9abca6806d76cdf9e907df9fb6ff2276b30423ddb1bcd7e0379f2c",
-    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
+    "sourceHash": "v1-871d1270eba0442c9c36ea74c8ea4fee8d946036e75c7d030a3428a86cef4ed3",
+    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
   }
 }
