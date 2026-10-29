@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-hsr-notices",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "HSR Notices MCP — FTC Hart-Scott-Rodino early-termination notices (api.ftc.gov, brokered by api.data.gov).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-hsr-notices": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "hsr-notices"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-hsr-notices.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/hsr-notices",
   "pipeworx": {
-    "sourceHash": "v1-871d1270eba0442c9c36ea74c8ea4fee8d946036e75c7d030a3428a86cef4ed3",
-    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
+    "mode": "gateway",
+    "slug": "hsr-notices",
+    "gatewaySlug": "hsr-notices",
+    "sourceHash": "v1-92d70090f5eecfb452d342465544185d50e85fdc5caff0328d4ea017a7a9c471",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
